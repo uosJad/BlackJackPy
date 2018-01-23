@@ -58,6 +58,8 @@ def endCycle(deck, dealer, user):
     
     if user.getScore() > 21:
         print('You lose')
+    elif dealer.getScore() > 21:
+        print('You Win')
     elif dealer.getScore() > user.getScore():
         print('You lose.')
     elif dealer.getScore() < user.getScore():
